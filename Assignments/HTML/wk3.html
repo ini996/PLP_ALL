@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Multimedia Webpage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f0f0f0;
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type='submit'] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      ul,
+      ol {
+        margin-top: 15px;
+      }
+
+      img {
+        max-width: 300px;
+        margin-top: 10px;
+      }
+
+      video,
+      audio {
+        margin-top: 10px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to My Multimedia Webpage</h1>
+
+    <!-- Embedded Image -->
+    <h2>Image Example</h2>
+    <img src="https://via.placeholder.com/300x200" alt="Sample Image" />
+
+    <!-- Video Element -->
+    <h2>Video Example</h2>
+    <video width="320" height="240" controls>
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Audio Element -->
+    <h2>Audio Example</h2>
+    <audio controls>
+      <source
+        src="https://www.w3schools.com/html/horse.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password (min 6 characters):</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        minlength="6"
+      />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="100" required />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="submit" value="Register" />
+    </form>
+
+    <!-- Embedded Table -->
+    <h2>User Information Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice Brown</td>
+          <td>alice@PLP.com</td>
+          <td>29</td>
+        </tr>
+        <tr>
+          <td>Oluwadamilola Mercy</td>
+          <td>Mercy@gmail.com</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Unordered List -->
+    <h2>Unordered List</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>Ordered List</h2>
+    <ol>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ol>
+  </body>
+</html>
